@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "d349b8d0-8b87-4489-96d3-970e370520b3",
+		"name": "REST-API-ANDROID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/agung/web_programming/rest_api_for_android/customer.php?search=Agung",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"agung",
+						"web_programming",
+						"rest_api_for_android",
+						"customer.php"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Agung"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET customer detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/agung/web_programming/rest_api_for_android/customer_detail.php?id=C001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"agung",
+						"web_programming",
+						"rest_api_for_android",
+						"customer_detail.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "C001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/agung/web_programming/rest_api_for_android/customer.php?nama=Test tambah 2121&telp=9218281&id=C002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"agung",
+						"web_programming",
+						"rest_api_for_android",
+						"customer.php"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "Test tambah 2121"
+						},
+						{
+							"key": "telp",
+							"value": "9218281"
+						},
+						{
+							"key": "id",
+							"value": "C002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT edit customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/agung/web_programming/rest_api_for_android/customer.php?nama=Agung Maulana&telp=088704145010&id=C002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"agung",
+						"web_programming",
+						"rest_api_for_android",
+						"customer.php"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "Agung Maulana"
+						},
+						{
+							"key": "telp",
+							"value": "088704145010"
+						},
+						{
+							"key": "id",
+							"value": "C002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/agung/web_programming/rest_api_for_android/customer.php?id=C002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"agung",
+						"web_programming",
+						"rest_api_for_android",
+						"customer.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "C002"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
