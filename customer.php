@@ -85,7 +85,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         $db->open();
         $search = $_REQUEST['search'];
-        $sql = 'select * from customer where namacustomer like "%'.$search.'%"';
+        $sql = 'select * from customer where namacustomer like "%'.$search.'%" OR telpcustomer like "%'.$search.'%"';
         $res = $db->get($sql);
         $result = [];
         if($res) {
